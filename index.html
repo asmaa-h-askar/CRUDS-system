@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDS system</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container shadow w-75 my-5 py-5 px-5">
+        <h1>crud system</h1>
+        <div class="form-group">
+            <label for="productName">productName:</label>
+            <input type="text" class="form-control my-1" id="productName">
+        </div>
+        <div class="form-group">
+            <label for="productCategory">productCategory:</label>
+            <input type="text" class="form-control my-1" id="productCategory">
+        </div>
+        <div class="form-group">
+            <label for="productPrice">productPrice:</label>
+            <input type="number" class="form-control my-1" id="productPrice">
+        </div>
+        <div class="form-group">
+            <label for="productDescription">productDescription:</label>
+            <textarea class="form-control mb-5 mt-1" id="productDescription" style="resize: none;"></textarea>
+        </div>  
+        <button id="toggleButton" onclick="addProduct()" class="btn btn-primary">add product</button>
+        <button id="clearBtn" class="btn btn-primary">clear</button>
+    </div>
+    <input id="searchinput" type="text" placeholder="Search ...." class="form-control w-25  m-auto">
+    <div class="container shadow my-5 py-5">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>index:</th>
+                    <th>name:</th>
+                    <th>category:</th>
+                    <th>price:</th>
+                    <th>description:</th>
+                    <th>update:</th>
+                    <th>delete:</th>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
